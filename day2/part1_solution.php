@@ -18,11 +18,7 @@ foreach( $aBoxes as $sRawDimensions ) {
 	$iSurfaceAreaFaceY = $iLength * $iWidth;
 	$iSurfaceAreaFaceZ = $iHeight * $iLength;
 
-	$iTotalSurfaceArea += (2 * $iSurfaceAreaFaceX) + (2 * $iSurfaceAreaFaceY) + (2 * $iSurfaceAreaFaceZ) + min(array(
-		$iSurfaceAreaFaceX,
-		$iSurfaceAreaFaceY,
-		$iSurfaceAreaFaceZ
-	));
+	$iTotalSurfaceArea += (2 * $iSurfaceAreaFaceX) + (2 * $iSurfaceAreaFaceY) + (2 * $iSurfaceAreaFaceZ) + min($iSurfaceAreaFaceX, $iSurfaceAreaFaceY, $iSurfaceAreaFaceZ);
 }
 
 echo $iTotalSurfaceArea;
