@@ -8,7 +8,7 @@
  */
 
 ini_set('auto_detect_line_endings', true);
-$aLogic = file(realpath(__DIR__) . '/part1_input.txt', FILE_IGNORE_NEW_LINES);
+$aLogic = file(realpath(__DIR__) . '/part2_input.txt', FILE_IGNORE_NEW_LINES);
 
 function parseLogic($aLogic) {
 	$aGateWireData = array();
